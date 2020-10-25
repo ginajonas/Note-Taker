@@ -4,7 +4,7 @@ const fs = require("fs");
 
 const app = express();
 const PORT = 3000;
-
+// Added static middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(express.json());
